@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.211" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AddAppointmentController">
+   <children>
+      <Label alignment="CENTER" layoutX="142.0" layoutY="21.0" prefHeight="40.0" prefWidth="300.0" text="Add Appointment">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="75.0" prefHeight="40.0" prefWidth="100.0" text="Customer">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TextField fx:id="customerName" editable="false" layoutX="269.0" layoutY="75.0" prefHeight="40.0" prefWidth="200.0" />
+      <Label layoutX="60.0" layoutY="125.0" prefHeight="40.0" prefWidth="100.0" text="Date">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <DatePicker fx:id="date" layoutX="269.0" layoutY="125.0" prefHeight="40.0" prefWidth="200.0" />
+      <Label layoutX="60.0" layoutY="225.0" prefHeight="40.0" prefWidth="70.0" text="Contact">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="60.0" layoutY="175.0" prefHeight="40.0" prefWidth="100.0" text="Time">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <ComboBox fx:id="time" layoutX="269.0" layoutY="175.0" prefHeight="40.0" prefWidth="200.0" />
+      <ComboBox fx:id="contact" layoutX="269.0" layoutY="225.0" onAction="#handleLocation" prefHeight="40.0" prefWidth="150.0" />
+      <Label layoutX="60.0" layoutY="325.0" prefHeight="40.0" prefWidth="200.0" text="Appointment Type">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <ComboBox fx:id="type" layoutX="269.0" layoutY="325.0" prefHeight="40.0" prefWidth="200.0" />
+      <Label layoutX="60.0" layoutY="275.0" prefHeight="40.0" prefWidth="80.0" text="Location">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TextField fx:id="location" editable="false" layoutX="269.0" layoutY="275.0" prefHeight="40.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
+

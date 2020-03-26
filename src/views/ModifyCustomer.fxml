@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.211" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ModifyCustomerController">
+   <children>
+      <Label alignment="CENTER" layoutX="150.0" layoutY="20.0" prefHeight="40.0" prefWidth="200.0" text="Modify Customer">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="200.0" layoutY="65.0" prefHeight="40.0" prefWidth="200.0" />
+      <TextField fx:id="address" layoutX="200.0" layoutY="115.0" prefHeight="40.0" prefWidth="200.0" />
+      <TextField fx:id="country" editable="false" layoutX="200.0" layoutY="215.0" prefHeight="40.0" prefWidth="200.0" />
+      <TextField fx:id="zip" layoutX="200.0" layoutY="265.0" prefHeight="40.0" prefWidth="200.0" />
+      <TextField fx:id="phone" layoutX="200.0" layoutY="315.0" prefHeight="40.0" prefWidth="200.0" />
+      <ComboBox fx:id="city" layoutX="200.0" layoutY="165.0" onAction="#setCountry" prefHeight="40.0" prefWidth="200.0" />
+      <Label layoutX="80.0" layoutY="65.0" prefHeight="40.0" prefWidth="100.0" text="Name">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="80.0" layoutY="115.0" prefHeight="40.0" prefWidth="100.0" text="Address">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="80.0" layoutY="165.0" prefHeight="40.0" prefWidth="100.0" text="City">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="80.0" layoutY="215.0" prefHeight="40.0" prefWidth="100.0" text="Country">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="80.0" layoutY="265.0" prefHeight="40.0" prefWidth="100.0" text="Zip code">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="80.0" layoutY="315.0" prefHeight="40.0" prefWidth="100.0" text="Phone">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
